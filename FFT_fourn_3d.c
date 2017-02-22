@@ -24,7 +24,8 @@ int main()
     double acc_time;
     int acc_n;
 
-    fftw_complex signal = calloc(NUM_POINTS, sizeof(*signal));
+//    fftw_complex signal = calloc(NUM_POINTS, sizeof(*signal));
+      fftw_complex signal[NUM_POINTS];
     int nn[4] = { NUM_POINTS1, NUM_POINTS1,NUM_POINTS2, NUM_POINTS3};
     
  //   static float data[2*NUM_POINTS];
