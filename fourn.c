@@ -50,8 +50,8 @@ void fourn(float data[], int nn[], int ndim, int isign)
 			wtemp=sin(0.5*theta);
 			wpr = -2.0*wtemp*wtemp;
 			wpi=sin(theta);
-						printf("theta %g cos %g sin %g wmr %g wmi %g\n",
-						       theta, cos(theta), sin(theta), wpr+1, wpi);
+						//printf("theta %g cos %g sin %g wmr %g wmi %g\n",
+						//       theta, cos(theta), sin(theta), wpr+1, wpi);
 			wr=1.0;
 			wi=0.0;
 			for (i3=1;i3<=ifp1;i3+=ip1) {
@@ -59,16 +59,16 @@ void fourn(float data[], int nn[], int ndim, int isign)
 					for (i2=i1;i2<=ip3;i2+=ifp2) {
 						k1=i2;
 						k2=k1+ifp1;
-	printf("k2 %d %g %g\n", k2, data[k2], data[k2+1]);
-	printf("k1 %d %g %g\n", k1, data[k1], data[k1+1]);
+	//printf("k2 %d %g %g\n", k2, data[k2], data[k2+1]);
+	//printf("k1 %d %g %g\n", k1, data[k1], data[k1+1]);
 						tempr=(float)wr*data[k2]-(float)wi*data[k2+1];
 						tempi=(float)wr*data[k2+1]+(float)wi*data[k2];
 						data[k2]=data[k1]-tempr;
 						data[k2+1]=data[k1+1]-tempi;
 						data[k1] += tempr;
 						data[k1+1] += tempi;
-	printf("k2 %d %g %g\n", k2, data[k2], data[k2+1]);
-	printf("k1 %d %g %g\n", k1, data[k1], data[k1+1]);
+	//printf("k2 %d %g %g\n", k2, data[k2], data[k2+1]);
+	//printf("k1 %d %g %g\n", k1, data[k1], data[k1+1]);
 					}
 				}
 				wr=(wtemp=wr)*wpr-wi*wpi+wr;

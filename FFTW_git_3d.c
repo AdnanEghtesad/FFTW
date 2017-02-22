@@ -10,12 +10,12 @@
 
 int main()
 {
-  static double acc_time;
-  static int acc_n;
+   double acc_time;
+   int acc_n;
   
   
-  static fftw_complex signal[NUM_POINTS];
-  static fftw_complex result[NUM_POINTS];
+  fftw_complex signal[NUM_POINTS];
+  fftw_complex result[NUM_POINTS];
   
   fftw_plan plan = fftw_plan_dft_3d(NUM_POINTS1,
 				    NUM_POINTS2,
@@ -30,7 +30,7 @@ int main()
 
   struct timespec now, tmstart;
   clock_gettime(CLOCK_REALTIME, &tmstart);
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 1; i++) {
     fftw_execute(plan);
   }
   clock_gettime(CLOCK_REALTIME, &now);
@@ -38,7 +38,7 @@ int main()
   acc_n++;
 
   printf("avg FFTW  avg time: %g total time %g\n", acc_time / acc_n, acc_time);
-    
+  getchar();
     do_something_with(result);
   
   fftw_destroy_plan(plan);

@@ -1,6 +1,6 @@
 
 CC = pgcc
-CFLAGS = -tp=p7 -fast
+CFLAGS = -tp=p7  -fast -Mlarge_arrays
 
 LOADLIBES = -lfftw3 -lrt
 

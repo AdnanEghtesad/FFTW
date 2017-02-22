@@ -21,10 +21,10 @@ typedef float fftw_complex[2];
 
 int main()
 {
-    static double acc_time;
-    static int acc_n;
+    double acc_time;
+    int acc_n;
 
-    static fftw_complex signal[NUM_POINTS];
+    fftw_complex signal = calloc(NUM_POINTS, sizeof(*signal));
     int nn[4] = { NUM_POINTS1, NUM_POINTS1,NUM_POINTS2, NUM_POINTS3};
     
  //   static float data[2*NUM_POINTS];
@@ -54,10 +54,13 @@ int main()
     acc_time += (now.tv_sec+now.tv_nsec*1e-9) - (tmstart.tv_sec+tmstart.tv_nsec*1e-9);
     acc_n++;
 
-        do_something_with(signal);
+      
 
     printf("avg fourn  avg time: %g total time %g\n", acc_time / acc_n, acc_time);
+    getchar();
+    do_something_with(signal);
     
+    free(signal);
     return 0;
 
 
