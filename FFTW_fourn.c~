@@ -1,0 +1,54 @@
+
+#include "fourn.h"
+
+#include<time.h>
+
+#define NUM_POINTS 2 //*16*16//128//64
+
+
+/* Never mind this bit */
+
+#include <stdio.h>
+#include <math.h>
+
+#define REAL 0
+#define IMAG 1
+
+//  static double acc_time;
+//  static int acc_n;
+//  struct timespec now, tmstart;
+//  clock_gettime(CLOCK_REALTIME, &tmstart);
+
+
+typedef float fftw_complex[2];
+
+#include "fftw_test.c"
+
+int main()
+{
+    static double acc_time;
+    static int acc_n;
+    struct timespec now, tmstart;
+    clock_gettime(CLOCK_REALTIME, &tmstart);
+
+    fftw_complex signal[NUM_POINTS];
+    int nn[2] = { 0, NUM_POINTS };
+
+    acquire_from_somewhere(signal);
+
+    do_something_with(signal);
+
+    fourn(&signal[0][REAL], nn, 1, -1);
+
+    do_something_with(signal);
+
+    clock_gettime(CLOCK_REALTIME, &now);
+    acc_time += (now.tv_sec+now.tv_nsec*1e-9) - (tmstart.tv_sec+tmstart.tv_nsec*1e-9);
+    acc_n++;
+
+    printf("avg FFTW  avg time: %g total time %g\n", acc_time / acc_n, acc_time);
+    
+    return 0;
+
+
+}

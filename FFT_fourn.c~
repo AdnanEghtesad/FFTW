@@ -41,13 +41,15 @@ int main()
  //   }  
     //printf("%g %g %g \n",signal[0][0],signal[1][0],signal[2][0]);
 
-        do_something_with(signal);
+    //    do_something_with(signal);
 
     struct timespec now, tmstart;
     clock_gettime(CLOCK_REALTIME, &tmstart);
 
-    fourn(&signal[0][REAL] -1 , nn, 1,   -1);
-
+    for (int i = 0; i < 10; i++) {
+      fourn(&signal[NUM_POINTS][REAL] -1 , nn, 1,   -1);
+   //     four1(&signal[0][REAL]-1 , NUM_POINTS, 1);
+    }
     clock_gettime(CLOCK_REALTIME, &now);
     acc_time += (now.tv_sec+now.tv_nsec*1e-9) - (tmstart.tv_sec+tmstart.tv_nsec*1e-9);
     acc_n++;

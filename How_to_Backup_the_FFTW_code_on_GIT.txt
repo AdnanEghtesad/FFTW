@@ -1,0 +1,1000 @@
+  142  ls
+  143  cd /etc
+  144  ls
+  145  su
+  146  man pgf90
+  147  pgaccelinfo
+  148  cd /home/adnan
+  149  ls
+  150  pfg90 test.f90
+  151  pgf990 test.f90
+  152  pgf90 test.f90
+  153  lmgrd.rc start
+  154  su
+  155  sudo reboot
+  156  reboot
+  157  su
+  158  logout
+  159  exit
+  160  sudo service lightdm stop
+  161  su
+  162  sudo chvt 3
+  163  su
+  164  cd /home
+  165  ls
+  166  sendkey ctrl-alt-F1
+  167  init 3
+  168  su
+  169  reboot
+  170  su
+  171  cd /home/adnan
+  172  ls
+  173  cd PFDD_Serial_Bicrystal
+  174  ls
+  175  pgcc SubsequentSlip.c
+  176  olmgrd.rc start
+  177  lmgrd.rc start
+  178  pgcc SubsequentSlip.c
+  179  cd /opt/pgi
+  180  ls
+  181  vim license.dat
+  182  lmgrd.rc start
+  183  su
+  184  init 3
+  185  startx
+  186  uname -a
+  187  cat /etc/*rel*
+  188  su
+  189  startx
+  190  su
+  191  startkde
+  192  ps aux | grep x
+  193  ps aux | grep x | more
+  194  ls
+  195  cd Downloads/
+  196  ls
+  197  su
+  198  ls
+  199  cd cuda-examples/
+  200  ls
+  201  pgaccelinfo
+  202  pwd
+  203  cd ..
+  204  ls
+  205  su
+  206  pgprof
+  207  su
+  208  pgaccelinfo
+  209  pgprof
+  210  su
+  211  cd /opt
+  212  ls
+  213  su
+  214  su -adnan
+  215  su
+  216  vncserver
+  217  sudo reboot
+  218  su
+  219  idb
+  220  cd /home
+  221  ls
+  222  cd bin
+  223  ls
+  224  cd /home/adnan
+  225  ls
+  226  cd Downloads
+  227  ls
+  228  ./qt-unified-linux-x64-2.0.5-online.run
+  229  su
+  230  su -adnan
+  231  su - adnan
+  232  vncpasswd
+  233  man pgf90
+  234  cd /home/adnan
+  235  ls
+  236  cd /opt/pgi
+  237  ls
+  238  rm licence.dat
+  239  ls
+  240  su
+  241  su
+  242  ls
+  243  cd GPU
+  244  ls
+  245  cd PFDD_Serial_Bicrystal
+  246  ls
+  247  pgcc SubsequentSlip.c
+  248  lmgrf.rc start
+  249  sudo lmgrd.rc start
+  250  root
+  251  su
+  252  su
+  253  nvvp
+  254  cd /home/adnan/GPU
+  255  ls
+  256  cd GPU
+  257  ls
+  258  cd PFDD_Serial_Bicrystal
+  259  ls
+  260  ll
+  261  pgcc -Mpreprocess -Minfo=accel -DGPU -fast -tp=p7 SubsequentSlip.c -lrt
+  262  pgcc -Mpreprocess -Minfo=accel -DGPU -ta=tesla -fast -tp=p7 SubsequentSlip.c -lrt
+  263  ./a.out | tee log2
+  264  ./a.out >  log2
+  265  ./a.out log2
+  266  ./a.ou
+  267  ./a.out
+  268  pgcc -Mpreprocess -Minfo=accel -DGPU -ta=tesla -fast -tp=p7 SubsequentSlip.c -lrt
+  269  ls
+  270  ./a.out | tee log2
+  271  ./a.out > log2
+  272  ./a.out
+  273  ls
+  274  chmod +x a.out
+  275  ./a.out
+  276  rm a.out
+  277  ls
+  278  pgcc -Mpreprocess -Minfo=accel -DGPU -ta=host -fast -tp=p7 SubsequentSlip.c -lrt
+  279  ./a.out
+  280  ls
+  281  chmod 775 a.out
+  282  ls
+  283  ./a.out
+  284  chmod 777 a.out
+  285  ls
+  286  ./a.out
+  287  su
+  288  cd /home/adnan
+  289  ls
+  290  cd HPC_Class
+  291  ls
+  292  cd Class_3
+  293  ls
+  294  cd build_script
+  295  ls
+  296  ./build.sh
+  297  cd Seperate_Files_Headers
+  298  ls
+  299  ./build.sh
+  300  ./hello
+  301  vim factorial.c
+  302  git --version
+  303  https://github.com/unh-hpc/building-code.git
+  304  git clone https://github.com/unh-hpc/building-code.git
+  305  ls
+  306  vim build.sh
+  307  cd /home/adnan
+  308  ls
+  309  cd HPC_Class
+  310  git clone https://github.com/unh-hpc/building-code.git
+  311  pwd
+  312  touch abc
+  313  ls -ld .
+  314  su
+  315  git clone https://github.com/unh-hpc/building-code.git
+  316  ls
+  317  cd building-code
+  318  ls
+  319  cd -
+  320  ls
+  321  cd Class_3
+  322  ls
+  323  cd make_file
+  324  ls
+  325  vim makefile
+  326  make hello
+  327  ./hello
+  328  vim makefile
+  329  ls
+  330  cd -
+  331  ls
+  332  cd make_file_with_variable_compilers
+  333  ls
+  334  vim makefile
+  335  chmod a+x makefile
+  336  su
+  337  ls
+  338  ls /opt/pgi/linux86-64/2016/mpi/openmpi/lib/
+  339  touch hello.c
+  340  vi hello.c 
+  341  mpicc hello.c -o hello
+  342  vi hello.c 
+  343  mpicc hello.c -o hello
+  344  cd Downloads/
+  345  cd fftw-2.1.5
+  346  ./configure --enable-mpi CC=pgcc
+  347  make
+  348  sudo su -
+  349  su -
+  350  ./configure --enable-mpi CC="pgcc -tp penryn-64"
+  351  make
+  352  make clean
+  353  ./configure --enable-mpi CC="pgcc" CFLAGS="-fast -tp penryn-64"
+  354  make
+  355  make check
+  356  sudo ls
+  357  sudo make install
+  358  ls /usr/local/include/
+  359  cd
+  360  ls
+  361  cd GPU/PFDD_MPI/
+  362  ls
+  363  mpicc psxtal.c 
+  364  vi psxtal.c 
+  365  mpicc psxtal.c 
+  366  mpicc psxtal.c -L/opt/local/lib -lfftw_mpi
+  367  mpicc psxtal.c -L/opt/local/lib -lfftw_mpi -lfftw
+  368  ./ao
+  369  ./a.out 
+  370  export LD_LIBRARY_PATH=/opt/local/lib
+  371  ./a.out 
+  372  export LD_LIBRARY_PATH=/usr/local/lib
+  373  ./a.out 
+  374  find /usr -name libopen-rte
+  375  find /usr -name libopen-rte\*
+  376  locate libopen-rte
+  377  export LD_LIBRARY_PATH=/opt/pgi/linux86-64/2016/mpi/openmpi-1.10.2/lib/
+  378  ./a.out 
+  379  mpirun -n 8 ./a.out 
+  380  vi ~/.bashrc 
+  381  mpirun -n 8 ./a.out 
+  382  unset LD_LIBRARY_PATH
+  383  mpirun -n 8 ./a.out 
+  384  ./a.out 
+  385  mpirun -n 8 ./a.out 
+  386  echo mpicc psxtal.c -L/opt/local/lib -lfftw_mpi -lfftw > build.sh
+  387  vi build.sh 
+  388  ls
+  389  chmod 755 build.sh 
+  390  ./build.sh 
+  391  vi build.sh 
+  392  ./build.sh 
+  393  ll
+  394  ./build.sh 
+  395  vi build.sh 
+  396  rm a.out 
+  397  ./build.sh 
+  398  mpirun -n 8 pxtal 
+  399  history
+  400  ll
+  401  ssh fc
+  402  cd /home/adnan/GPU
+  403  ls
+  404  cd PFDD_MPI
+  405  ll
+  406  pgcc psxtal.c
+  407  history
+  408  ls
+  409  ./build.sh
+  410  vim build.sh
+  411  mpicc -n 8 ./a.out
+  412  mpicc n 8 ./a.out
+  413  ls
+  414  cd pxtal
+  415  mpicc n 8 ./build.sh
+  416  mpirun n 8 ./build.sh
+  417  mpirun n 8 ./a.out
+  418  ls
+  419  ./build.sh
+  420  ll
+  421  mpirun n 8 ./pxtal
+  422  ./pxtal
+  423  vim build.sh
+  424  mpirun -n 8 pxtal
+  425  mpirun -n 22 pxtal
+  426  mpirun -n 10 pxtal
+  427  mpirun -n 1 pxtal
+  428  ulimit -s unlimited
+  429  mpirun -n 1 pxtal
+  430  ./build.sh
+  431  ls
+  432  ./build.sh
+  433  mpirun -n 1 pxtal
+  434  cd Downloads/
+  435  ls
+  436  tar zxvf fftw-2.1.5.tar.gz 
+  437  cd fftw-2.1.5
+  438  ls
+  439  less README
+  440  ./configure --help
+  441  cd mpi
+  442  ls
+  443  cd ..
+  444  ./configure --enable-mpi
+  445  mpicc
+  446  less config.log 
+  447  ./configure 
+  448  ./configure --enable-mpi
+  449  ./configure --enable-mpi CC=pgcc
+  450  less config.log 
+  451  find /opt/pgi/ -name librdma\*
+  452  locate librdma
+  453  less config.log 
+  454  find /opt/ -name librdma\*
+  455  find /usr/ -name librdma\*
+  456  less config.log 
+  457  ls /opt/pgi/linux86-64/2016/cfgfgcfg
+  458  clear
+  459  history
+  460  ls
+  461  ./configure --help
+  462  cd mpi
+  463  ls
+  464  pgprof
+  465  su
+  466  cd /home/adnan
+  467  ls
+  468  cd HPC_Clas
+  469  cd HPC_Class
+  470  ls
+  471  cd Class_3
+  472  ls
+  473  cd build_script
+  474  ls
+  475  ./build.sh
+  476  cd Seperate_Files_Headers
+  477  ll
+  478  ./build.sh
+  479  su
+  480  cd /home/adnan/GPU
+  481  ll
+  482  cd PFDD_Serial_Bicrystal
+  483  ll
+  484  cd Case_Study_NT=5000_Stress_Strain
+  485  ll
+  486  cd 128_2_128
+  487  ll
+  488  ./build_GPU.sh
+  489  ./a.out | tee logGPU
+  490  ulimit -s unlimited
+  491  ./a.out | tee logGPU
+  492  dc /home/adnan/GPU
+  493  ls
+  494  cd /home/adnan
+  495  cd GPU
+  496  ls
+  497  cd PFDD_Serial_Bicrystal
+  498  ll
+  499  cd Case_Study_NT=1000_Stress_Strain
+  500  ll
+  501  cd 32_2_32
+  502  ll
+  503  ./build_multicore.sh
+  504  ./a.out 
+  505  ./a.out | tee logmulticore
+  506  su
+  507  cd /home/adnan
+  508  ll
+  509  cd GPU
+  510  ll
+  511  cd PFDD_Serial_Bicrystal
+  512  ll
+  513  cd Case_Study_NT=1000_Stress_Strain
+  514  ll
+  515  cd multicore
+  516  ll
+  517  cd 64_2_64
+  518  ll
+  519  ./build_multicore.sh
+  520  pwd
+  521  ./a.out | tee logmulticore
+  522  ll
+  523  pwd
+  524  cd /home/adnan/GPU/PFDD_Serial_Bicrystal/Case_Study_NT=1000_Stress_Strain
+  525  ll
+  526  cd compare
+  527  ll
+  528  diff logGPU logmulticore
+  529  pwd
+  530  cd /home/adnan/GPU/PFDD_Serial_Bicrystal/Case_Study_NT=1000_Stress_Strain
+  531  ll
+  532  cd multicore
+  533  ll
+  534  cd 128_2_128
+  535  ll
+  536  ./build_multicore.sh
+  537  ulimit -s unlimited
+  538  ./a.out | tee logmulticore
+  539  cd /home/adnan
+  540  ls
+  541  cd GPU
+  542  ll
+  543  cd PFDD_Serial_Bicrystal
+  544  ll
+  545  diff SubsequentSlip_Feb_2v9.c SubsequentSlip_Feb_2v10.c
+  546  su
+  547  cd /home/adnan
+  548  cd GPU
+  549  ll
+  550  cd PFDD_Serial_Bicrystal
+  551  ll
+  552  cd Case_Study_NT=1000_Stress_Strain
+  553  ll
+  554  cd GPU
+  555  ll
+  556  cd 16_2_16
+  557  ll
+  558  ./build_GPU.sh
+  559  ./a.out | tee logGPU
+  560  ./build_multicore.sh
+  561  ll
+  562  cd -
+  563  ll
+  564  cd -
+  565  ll
+  566  pwd
+  567  cd /home/adnan/GPU/PFDD_Serial_Bicrystal/Case_Study_NT=1000_Stress_Strain
+  568  ll
+  569  cd multicore
+  570  ll
+  571  cd 16_2_16
+  572  ll
+  573  ./build_multicore.sh
+  574  ./a.out | tee logmulticore
+  575  ./a.out
+  576  ll
+  577  pwd
+  578  export ACC_NUM_cores=4
+  579  ./build_multicore.sh
+  580  ./a.out | tee logmulticore
+  581  export ACC_NUM_cores=22
+  582  ./build_multicore.sh
+  583  ./a.out | tee logmulticore
+  584  su
+  585  su
+  586  ll
+  587  cd /home/adnan/GPU
+  588  ll
+  589  cd PFDD_Serial_Bicrystal
+  590  ll
+  591  cd tests
+  592  ll
+  593  ./build_GPU.sh
+  594  ./a.out
+  595  ll
+  596  vim build_GPU.sh
+  597  cd /home/adnan/GPU
+  598  ls
+  599  cd PFDD_Serial_Bicrystal
+  600  ll
+  601  cd Case_Study_NT=1000_Stress_Strain
+  602  ll
+  603  cd -
+  604  lll
+  605  pwd
+  606  ll
+  607  cd tests
+  608  ll
+  609  pgcc -Mpreprocess -DGPU -Minfo=accel -ta=tesla:pinned,fastmath -fast -tp=p7 -lrt SubsequentSlip_Feb_2v9.c
+  610  pgcc -Mpreprocess -DGPU -Minfo=accel -ta=tesla:pinned,fastmath -fast -tp=p7 -lrt SubsequentSlip_Feb_2v11.c
+  611  pgcc -Mpreprocess -DGPU -Minfo=accel -ta=tesla:pinned,fastmath -Minfo=ccff -tp=p7 -lrt SubsequentSlip_Feb_2v11.c
+  612  pgprof
+  613  pgcc -Mpreprocess -DGPU -Minfo=accel -ta=tesla:pinned,fastmath  -tp=p7 -lrt SubsequentSlip_Feb_2v11.c
+  614  pgprof
+  615  su
+  616  su
+  617  cd /usr/local/cuda
+  618  ll
+  619  cd /home/adnan/GPU
+  620  ll
+  621  cd CUFFT
+  622  ll
+  623  pgcc CUFFT_test.c
+  624  mpicc -L/opt/local/lib -lcufft CUFFT_test.c
+  625  cd /local
+  626  ll
+  627  cd /local
+  628  cd /usr
+  629  ll
+  630  cd local
+  631  ll
+  632  cd lib4
+  633  cd lib
+  634  l
+  635  ls
+  636  export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64
+  637  export LD_LIBRARY_PATH=/opt/local/lib
+  638  cd /home/adnan/GPU
+  639  ll
+  640  cd CUFFT
+  641  pgcc CUFFT_ex.c
+  642  ll
+  643  pgcc CUFFT_test.c
+  644  vim CUFFT_test.c
+  645  سع
+  646  یسیبسیبسیبسیب
+  647  یز
+  648  ی
+  649  سیب
+  650  /home/adnan/GPU/PFDD_MPI
+  651  cd /home/adnan/GPU/PFDD_MPI
+  652  ll
+  653  ./build.sh
+  654  mpirun -n 1 pxtal
+  655  module load platform-mpill
+  656  ll
+  657  vim build.sh
+  658  ./build.sh
+  659  mpirun -n 1 pxtal
+  660  vim build.sh
+  661  ./build.sh
+  662  ll
+  663  rm pxtal
+  664  ll
+  665  ./a.out
+  666  mpirun
+  667  mpirun -np 1
+  668  mpirun -np 1 ./a.out
+  669  vim build.sh
+  670  ./a.out
+  671  ./build.sh
+  672  vim build.sh
+  673  ./build.sh
+  674  vim build.sh
+  675  cd /usr/local/lib
+  676  ll
+  677  cd /home/adnan/GPU
+  678  ll
+  679  cd PFDD_MPI
+  680  ll
+  681  cd fftw-2.1.5
+  682  ll
+  683  ./ configure --enable-mpi
+  684  ./configure --enable-mpi
+  685  su
+  686  pwd
+  687  suAe2546@7435
+  688  cccc
+  689  clc
+  690  clear all
+  691  su
+  692  cd /usr/local
+  693  ls
+  694  cd cuda-7.5
+  695  cd lib
+  696  ll
+  697  cd -
+  698  cd lib64
+  699  ls
+  700  pwd
+  701  cd /home/adnan
+  702  cd GPU
+  703  ll
+  704  cd CUFFT
+  705  ll
+  706  su
+  707  git config --global user.name "Adnan Eghtesad"
+  708  git config --global user.email "adnaneghtesad@gmail.com"
+  709  git log
+  710  git clone https://github.com/unh-hpc/class-4-in-class-germasch.git
+  711  git log
+  712  ll
+  713  cd class-4-in-class-germasch
+  714  git log
+  715  git log --oneline
+  716  git log -p
+  717  git status
+  718  ll
+  719  cd /home/adnan
+  720  ls
+  721  cd HPC_Class
+  722  ls
+  723  cd class-4-in-class-germasch
+  724  git status
+  725  ls
+  726  vim configure.ac
+  727  vim
+  728  ls
+  729  cd /home/adnan
+  730  ll
+  731  cd HPC_Class
+  732  ls
+  733  su
+  734  su
+  735  cd /home/adnan
+  736  ls
+  737  cd GHPC_Class
+  738  cd HPC_Class
+  739  ls
+  740  git clone static double acc_time;
+  741      static int acc_n;
+  742      struct timespec now, tmstart;
+  743      clock_gettime(CLOCK_REALTIME, &tmstart);
+  744  git clone https://github.com/AdnanEghtesad/Class_test.git
+  745  ls
+  746  cd Class_test
+  747  touch test.c
+  748  ls
+  749  git push
+  750  gir commit
+  751  git commit
+  752  git push
+  753  pwd
+  754  cd /home/adnan/HPC_Class/Class_test
+  755  su
+  756  cd /home/adnan
+  757  ls
+  758  cd /home/adnan/GPU/FFTW
+  759  make
+  760  ll
+  761  ./FFT_fourn
+  762  make
+  763  ./FFT_fourn
+  764  ./FFTW_git_
+  765  ./FFTW_git
+  766  make
+  767  ./FFTW_git
+  768  ./FFT_fourn
+  769  make
+  770  ./FFT_fourn
+  771  ./FFTW_git
+  772  ./FFT_fourn
+  773  make
+  774  ./FFT_fourn
+  775  ./FFTW_git
+  776  make
+  777  ./FFTW_git
+  778  ./FFT_fourn
+  779  make
+  780  ./FFT_fourn
+  781  ./FFTW_git
+  782  make
+  783  ./FFTW_git
+  784  ./FFT_fourn
+  785  make
+  786  ./FFT_fourn
+  787  ./FFTW_git
+  788  make
+  789  ./FFTW_git
+  790  ./FFT_fourn
+  791  make
+  792  ./FFT_fourn
+  793  make
+  794  ./FFT_fourn
+  795  make
+  796  ./FFT_fourn
+  797  ./FFTW_git
+  798  make
+  799  ./FFT_fourn
+  800  make
+  801  ./FFT_fourn
+  802  make
+  803  ./FFT_fourn
+  804  make
+  805  ./FFT_fourn
+  806  make
+  807  ./FFT_fourn
+  808  make
+  809  ./FFT_fourn
+  810  make
+  811  ./FFT_fourn
+  812  ./FFTW_git
+  813  make clean
+  814  make 
+  815  ./FFTW_git
+  816  ./FFT_fourn
+  817  make 
+  818  ./FFT_fourn
+  819  ./FFTW_git
+  820  make 
+  821  ./FFT_fourn
+  822  make 
+  823  ./FFT_fourn
+  824  ls
+  825  make 
+  826  ./FFT_fourn
+  827  make 
+  828  ./FFT_fourn
+  829  make 
+  830  ./FFT_fourn
+  831  make 
+  832  ./FFTW_git
+  833  cd -
+  834  ls
+  835  cd GPU
+  836  cd FFTW_
+  837  cd FFTW
+  838  ls
+  839  cd /home/adnan/GPU
+  840  cd GGTW_Adnan
+  841  ll
+  842  cd /home/adnan/GPU
+  843  ls
+  844  cd FFTW_Adnan
+  845  ls
+  846  ./build_FFTW1Dr2c.sh
+  847  ./a.out
+  848  ./build_FFTW1Dr2c.sh
+  849  ./a.out
+  850  ./build_FFTW1Dr2c.sh
+  851  ./a.out
+  852  ./build_FFTW1Dr2c.sh
+  853  ./a.out
+  854  ./build_FFTW1Dr2c.sh
+  855  ./build_FFTW1D.sh
+  856  ./a.out
+  857  ./build_FFTW1D.sh
+  858  ./a.out
+  859  ./build_Fourn1D
+  860  ./build_Fourn1D.sh
+  861  ./a.out
+  862  ./build_Fourn1D.sh
+  863  ./a.out
+  864  ./build_Fourn1D.sh
+  865  ./a.out
+  866  ./build_Fourn1D.sh
+  867  ./a.out
+  868  ./build_Fourn1D.sh
+  869  ./a.out
+  870  ./build_Fourn1D.sh
+  871  ./a.out
+  872  ./build_Fourn1D.sh
+  873  ./a.out
+  874  ./build_Fourn1D.sh
+  875  ./a.out
+  876  ./build_Fourn1D_Complex_Input.sh
+  877  ./a.out
+  878  ./build_Fourn1D_Complex_Input.sh
+  879  ./a.out
+  880  ./build_Fourn1D_Complex_Input.sh
+  881  ./a.out
+  882  ./build_Fourn1D_Complex_Input.sh
+  883  ./a.out
+  884  ./build_Fourn1D_Complex_Input.sh
+  885  ./a.out
+  886  ./build_Fourn1D_Complex_Input.sh
+  887  ./a.out
+  888  ./build_Fourn1D_Complex_Input.sh
+  889  ./a.out
+  890  ./build_Fourn1D_Complex_Input.sh
+  891  ./a.out
+  892  ./build_Fourn1D_Complex_Input.sh
+  893  ./a.out
+  894  ./build_Fourn1D_Complex_Input.sh
+  895  ./a.out
+  896  ./build_Fourn1D_Complex_Input.sh
+  897  ./a.out
+  898  ./build_Fourn1D_Complex_Input.sh
+  899  ./a.out
+  900  ./build_Fourn1D_Complex_Input.sh
+  901  ./a.out
+  902  ./build_Fourn1D_Complex_Input.sh
+  903  ./a.out
+  904  ./build_Fourn1D_Complex_Input.sh
+  905  ./a.out
+  906  ./build_Fourn1D_Complex_Input.sh
+  907  ./a.out
+  908  ./build_Fourn1D_Complex_Input.sh
+  909  ./a.out
+  910  ./build_Fourn1D_Complex_Input.sh
+  911  ./a.out
+  912  ./build_Fourn1D_Complex_Input.sh
+  913  ./a.out
+  914  ./build_Fourn1D_Complex_Input.sh
+  915  ./a.out
+  916  ./build_Fourn1D_Complex_Input.sh
+  917  ./a.out
+  918  ./build_Fourn1D_Complex_Input.sh
+  919  ./a.out
+  920  ./build_Fourn1D_Complex_Input.sh
+  921  ./a.out
+  922  ./build_Fourn1D_Complex_Input.sh
+  923  ./a.out
+  924  ./build_Fourn1D_Complex_Input.sh
+  925  ./a.out
+  926  ./build_Fourn1D_Complex_Input.sh
+  927  ./a.out
+  928  cd /home/adnan/GPU/FFTW
+  929  ls
+  930  make
+  931  FFT_fourn.out
+  932  ./FFT_fourn
+  933  make
+  934  ./FFT_fourn
+  935  make
+  936  ./FFT_fourn
+  937  make
+  938  ./FFT_fourn
+  939  make
+  940  ./FFT_fourn
+  941  make
+  942  ./FFT_fourn
+  943  make
+  944  ./FFT_fourn
+  945  make
+  946  ./FFT_fourn
+  947  make
+  948  ./FFT_fourn
+  949  make
+  950  ./FFT_fourn
+  951  make
+  952  ./FFT_fourn
+  953  make
+  954  ./FFT_fourn
+  955  make
+  956  ./FFT_fourn
+  957  make
+  958  ./FFT_fourn
+  959  make
+  960  ./FFT_fourn
+  961  make
+  962  ./FFT_fourn
+  963  make
+  964  ./FFT_fourn
+  965  make
+  966  ./FFT_fourn
+  967  make
+  968  ./FFT_fourn
+  969  make
+  970  ./FFT_fourn
+  971  make
+  972  ./FFT_fourn
+  973  make
+  974  ./FFT_fourn
+  975  make
+  976  ./FFT_fourn
+  977  make
+  978  ./FFT_fourn
+  979  make
+  980  ./FFT_fourn
+  981  make
+  982  ./FFT_fourn
+  983  make
+  984  ./FFT_fourn
+  985  make
+  986  ./FFT_fourn
+  987  make
+  988  ./FFT_fourn
+  989  make
+  990  ./FFT_fourn
+  991  make
+  992  ./FFT_fourn
+  993  make
+  994  ./FFT_fourn
+  995  make
+  996  ./FFT_fourn
+  997  make
+  998  ./FFT_fourn
+  999  make
+ 1000  ./FFT_fourn
+ 1001  make
+ 1002  ./FFT_fourn
+ 1003  make
+ 1004  ./FFT_fourn
+ 1005  make
+ 1006  ./FFT_fourn
+ 1007  make
+ 1008  ./FFT_fourn
+ 1009  make
+ 1010  make clean
+ 1011  make
+ 1012  ./FFT_fourn
+ 1013  make
+ 1014  ./FFT_fourn
+ 1015  make
+ 1016  ./FFT_fourn
+ 1017  make
+ 1018  ./FFT_fourn
+ 1019  make
+ 1020  ./FFT_fourn
+ 1021  make
+ 1022  ./FFT_fourn
+ 1023  make
+ 1024  ./FFT_fourn
+ 1025  make
+ 1026  ./FFT_fourn
+ 1027  make
+ 1028  ./FFT_fourn
+ 1029  make
+ 1030  ./FFT_fourn
+ 1031  make
+ 1032  ./FFT_fourn
+ 1033  make
+ 1034  ./FFT_fourn
+ 1035  make
+ 1036  ./FFT_fourn
+ 1037  make
+ 1038  ./FFT_fourn
+ 1039  make
+ 1040  ./FFT_fourn
+ 1041  make
+ 1042  ./FFT_fourn
+ 1043  make
+ 1044  ./FFT_fourn
+ 1045  make
+ 1046  ./FFT_fourn
+ 1047  make
+ 1048  ./FFT_fourn
+ 1049  make
+ 1050  ./FFT_fourn
+ 1051  make
+ 1052  ./FFT_fourn
+ 1053  make
+ 1054  ./FFT_fourn
+ 1055  make
+ 1056  ./FFT_fourn
+ 1057  make
+ 1058  ./FFT_fourn
+ 1059  make
+ 1060  ./FFT_fourn
+ 1061  make
+ 1062  ./FFT_fourn
+ 1063  make
+ 1064  ./FFT_fourn
+ 1065  make
+ 1066  ./FFT_fourn
+ 1067  make
+ 1068  ./FFT_fourn
+ 1069  make
+ 1070  ./FFT_fourn
+ 1071  make
+ 1072  ./FFT_fourn
+ 1073  make
+ 1074  ./FFT_fourn
+ 1075  make
+ 1076  ./FFT_fourn
+ 1077  make
+ 1078  ./FFT_fourn
+ 1079  make
+ 1080  ./FFT_fourn
+ 1081  make
+ 1082  ./FFT_fourn
+ 1083  make
+ 1084  ./FFT_fourn
+ 1085  make
+ 1086  ./FFT_fourn
+ 1087  make
+ 1088  ./FFT_fourn
+ 1089  make
+ 1090  ./FFT_fourn
+ 1091  make
+ 1092  ./FFT_fourn
+ 1093  ls
+ 1094  make
+ 1095  ./FFT_fourn
+ 1096  ./FFTW_git
+ 1097  vim FFT_fourn.c
+ 1098  vim FFTW_git.c
+ 1099  make
+ 1100  ./FFTW_git
+ 1101  ./FFT_fourn
+ 1102  vi FFT_fourn.c
+ 1103  rm *.o
+ 1104  make
+ 1105  ./FFTW_git
+ 1106  ./FFT_fourn
+ 1107  vi FFT_fourn.c
+ 1108  make
+ 1109  ./FFT_fourn
+ 1110  vi FFT_fourn.c
+ 1111  vi fourn.c
+ 1112  vi fftw_test.c
+ 1113  make
+ 1114  ./FFT_fourn
+ 1115  vi fftw_test.c
+ 1116  vi fourn.c
+ 1117  make && ./FFT_fourn
+ 1118  vi fftw_test.c
+ 1119  make && ./FFT_fourn
+ 1120  vi FFT_fourn.c
+ 1121  make
+ 1122  make && ./FFT_fourn
+ 1123  vi fftw_test.c
+ 1124  make && ./FFT_fourn
+ 1125  git init
+ 1126  ls
+ 1127  git add Makefile *.c
+ 1128  git add *.h
+ 1129  git status
+ 1130  vi .gitignore
+ 1131  git status
+ 1132  git add .gitignore 
+ 1133  rm FFTW_fourn a.out 
+ 1134  git add .gitignore 
+ 1135  vi .git
+ 1136  vi .gitignore 
+ 1137  git add .gitignore 
+ 1138  git status
+ 1139  git commit
+ 1140  history -> How_to_Backup_the_FFTW_code_on_GIT
+ 1141  history > How_to_Backup_the_FFTW_code_on_GIT.txt
